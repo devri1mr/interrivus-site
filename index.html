@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>InterRivus Systems</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      background: linear-gradient(180deg,
+        #f9fbfd 0%,
+        #eef4f9 30%,
+        #dce9f4 60%,
+        #ccdff0 100%);
+      position: relative;
+    }
+
+    .bg-waves {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .doc {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+      padding: 0 48px;
+    }
+
+    .ir-logo {
+      width: 220px;
+      display: block;
+      margin: 0 auto 18px;
+    }
+
+    p {
+      font-size: 13.5px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: #1e3248;
+      margin: 0 0 8px 0;
+      padding: 0;
+    }
+    p strong {
+      font-weight: 700;
+      color: #0d1e35;
+    }
+
+    .divider {
+      width: 45%;
+      height: 1px;
+      margin: 12px auto;
+      background: linear-gradient(90deg, transparent, rgba(90,140,190,0.35), transparent);
+    }
+
+    .atlas-logo {
+      width: 100px;
+      display: block;
+      margin: 10px auto 4px;
+    }
+
+    .atlas-sub {
+      font-size: 9.5px;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #6a8aa8;
+      line-height: 1.55;
+    }
+
+    .atlas-link {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 20px 12px;
+      border-radius: 12px;
+      border: 1px solid transparent;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+    .atlas-link:hover {
+      border-color: rgba(90,140,190,0.3);
+      background: rgba(255,255,255,0.5);
+      transform: translateY(-2px);
+    }
+
+    .atlas-cta {
+      margin-top: 8px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      color: #2a6496;
+      text-decoration: none;
+    }
+    .atlas-link:hover .atlas-cta {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- River wave background — matches the subtle streaks in the document -->
+  <svg class="bg-waves" viewBox="0 0 893 1339" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <!-- Lower-half diagonal river streaks -->
+    <path d="M-50 820 Q150 780 350 810 Q550 840 750 800 Q880 775 1000 790" stroke="rgba(100,155,210,0.18)" stroke-width="2.5" fill="none"/>
+    <path d="M-50 870 Q170 832 380 858 Q580 884 775 848 Q900 824 1010 838" stroke="rgba(100,155,210,0.13)" stroke-width="1.8" fill="none"/>
+    <path d="M-50 920 Q200 885 410 906 Q610 927 800 896 Q920 874 1020 886" stroke="rgba(100,155,210,0.09)" stroke-width="1.2" fill="none"/>
+    <path d="M-50 970 Q220 938 430 954 Q630 970 820 944 Q940 926 1030 934" stroke="rgba(100,155,210,0.07)" stroke-width="1" fill="none"/>
+    <path d="M-50 1020 Q240 990 450 1002 Q650 1014 840 990 Q960 974 1040 980" stroke="rgba(100,155,210,0.05)" stroke-width="1" fill="none"/>
+    <!-- Wider diagonal sweep mid-lower -->
+    <path d="M100 760 Q300 720 500 750 Q700 780 900 745" stroke="rgba(120,170,220,0.1)" stroke-width="1.5" fill="none" transform="rotate(-6, 500, 860)"/>
+    <path d="M-100 1100 Q200 1060 500 1085 Q750 1108 1000 1075" stroke="rgba(100,155,210,0.07)" stroke-width="1" fill="none"/>
+  </svg>
+
+  <div class="doc">
+
+    <!-- InterRivus Systems logo -->
+    <img src="interrivus-logo.png" alt="InterRivus Systems" class="ir-logo" />
+
+    <!-- Body copy — exact text from document -->
+    <p><strong>InterRivus Systems</strong> began with a simple idea conceived in Düsseldorf, Germany, overlooking the <strong>Rhine</strong>.</p>
+
+    <p>The name <strong>InterRivus</strong> comes from Latin roots meaning <strong>"between rivers."</strong></p>
+
+    <p>It represents the convergence of separate streams into something more powerful.</p>
+
+    <p>That symbolism carried a personal meaning as well.</p>
+
+    <p>The names <strong>Beckham</strong> and <strong>Brooks</strong> both originate from words connected to streams and waterways. Those two streams of inspiration mirrored the larger concept behind <strong>InterRivus</strong>: combining ideas, data, and systems into one unified flow.</p>
+
+    <div class="divider"></div>
+
+    <p>From that foundation, <strong>Atlas</strong> was built — an operational intelligence platform designed to bring structure, logic, and strategy to complex businesses.</p>
+
+    <!-- Atlas logo + tagline — links to Atlas app -->
+    <a href="https://atlas.interrivus.com" class="atlas-link">
+      <img src="atlas-logo.png" alt="Atlas" class="atlas-logo" />
+      <div class="atlas-sub">Accountability Through<br />Logic, Analysis &amp; Strategy</div>
+      <div class="atlas-cta">Launch Atlas →</div>
+    </a>
+
+  </div>
+
+</body>
+</html>
