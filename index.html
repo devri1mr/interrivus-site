@@ -11,16 +11,17 @@
 
     body {
       font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
+      padding: 40px 0;
       background: linear-gradient(180deg,
         #f9fbfd 0%,
         #eef4f9 30%,
         #dce9f4 60%,
         #ccdff0 100%);
+      background-attachment: fixed;
       position: relative;
     }
 
@@ -37,7 +38,7 @@
       width: 100%;
       max-width: 500px;
       text-align: center;
-      padding: 60px 48px;
+      padding: 0 48px;
     }
 
     .ir-logo {
